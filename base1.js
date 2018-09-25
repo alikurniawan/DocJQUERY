@@ -40,12 +40,30 @@ $(document).ready(function(){
         $("#div3").fadeIn("fast");
         $("#div4").fadeIn(5000);  //in Second
         
+        $("#div2").fadeTo("slow", 0.3);
+        $("#div3").fadeTo("fast", 0.1);
         $("#div3").fadeTo(3000, 0.5); //(Milisecond, Opacity)
 
         $("#div1").fadeOut();
         $("#div2").fadeOut("slow");
         $("#div3").fadeOut("fast");
         $("#div4").fadeOut(5000);  //in Second
+
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle("fast");
+        $("#div4").fadeToggle(5000);  //in Second
+
+        $("#div1").slideUp();
+        $("#div2").slideUp("slow");
+        $("#div3").slideUp("fast");
+        $("#div4").slideUp(5000);  //in Second
+
+        $("#div1").slideDown();
+        $("#div2").slideDown("slow");
+        $("#div3").slideDown("fast");
+        $("#div4").slideDown(5000);  //in Second
+
     })
 });
 
