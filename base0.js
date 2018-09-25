@@ -21,5 +21,6 @@ $(document).ready(function(){
 
     $("strong").click(function(){
         $("tr:even").css("background-color", "yellow");  //CSS Script
+        $("tr:odd").css("background-color", "aqua");  //CSS Script
     })
 })
