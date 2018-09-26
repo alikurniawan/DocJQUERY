@@ -14,10 +14,16 @@ $(document).ready(function(){
         $("#efek3").stop();
     })
 
-    //STOP SELURUHNYA
-    $("#berhenti1").click(function(){
+    //STOP SELURUHNYA ---> langsung menuju akhir Effect nya
+    $("#berhenti2").click(function(){
         $("#efek1").stop(true);
         $("#efek2").stop(true);
         $("#efek3").stop(true);
+    })
+
+    $("#berhenti2").click(function(){
+        $("#efek1").stop(false, true);
+        $("#efek2").stop(false, true);
+        $("#efek3").stop(false, true);
     })
 })
