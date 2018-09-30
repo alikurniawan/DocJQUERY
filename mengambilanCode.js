@@ -18,7 +18,7 @@ $(document).ready(function(){
     $("#button1"). click(function(){
         alert("nama" + $('#input').val()); //<input type="text" id="ibput"/>
     
-        //Mengetahui Attribut
+        //Menambah Attribut Elemen
         alert($('#input').attr('style'));
     })
 
@@ -30,5 +30,11 @@ $(document).ready(function(){
     //Masukkan value text ke dalam input type text
     $("#set3").click(function(){  //#set3 adalah button id
         $("#inp1").val("Hallo apa kabar"); //inp1 adalah <input type="text" />
+    })
+
+    $("#set4").click(function(){  //set4 is button
+        $("li").text(function(no_urut, nama){
+            return no_urut + nama;
+        })
     })
 })
