@@ -50,5 +50,12 @@ $(document).ready(function(){
             "title": "Youtube"
         });
     })
+
+    //Link href bisa diarahkan ke link youtube pribadi kita
+    $("set5"),click(function(){
+        $(".ke_youtube").attr("href", function(i, link){
+            return link + "/results?search_query=aliweb"; //Alamat website atau youtube pribadi kita
+        });
+    })
     
 })
