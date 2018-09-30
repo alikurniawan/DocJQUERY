@@ -34,7 +34,21 @@ $(document).ready(function(){
 
     $("#set4").click(function(){  //set4 is button
         $("li").text(function(no_urut, nama){
-            return no_urut + nama;
+            return no_urut + nama;  //no_urut menjadi index 0,1,2
         })
     })
+
+    // <a> class="ke_youtube" href="https://google.com">LINK</a>
+    // Merubah attribute href yg menuju ke google menjadi youtube
+    $("set5"),click(function(){
+        $(".ke_youtube").attr("href", "https://youtube.com");
+    })
+
+    $("set5"),click(function(){
+        $(".ke_youtube").attr({
+            "href": "https://youtube.com",
+            "title": "Youtube"
+        });
+    })
+    
 })
