@@ -24,8 +24,22 @@
 
 //JQUERY EXECUTION
 $(document).ready(function(){
+    
+    //Add Class
     $("#kelas1").click(function(){
         $("h3, p").addClass("huruf"); //---> diarahkan atau ( memasukkan class ) ke class CSS dengan nama huruf
         $("h3").addClass("header1"); //--> 
     })
+
+    //Remove Class
+    $("#kelas1").click(function(){
+        $("h3").removeClass("header1"); //--> 
+    })
+
+    //Toggle Class
+    $("#kelas1").click(function(){
+        $("h3").toggleClass("header1"); //--> //ON OFF class --> kalau sudah ada maka tidka diisikan jika belum maka diisikan class
+    })
+
+
 })
