@@ -52,8 +52,8 @@ $("#tambah1"),click(function(){
 {/* <div id="kotak3">
     
     <ul>
-        <li>Isi1</li>
-        <li>Isi2</li>
+        <li class="a">Isi1</li>
+        <li class="b">Isi2</li>
         <li>Isi3</li>
     </ul>
 </div>
@@ -66,4 +66,9 @@ $("#hapus1").click(function(){
 //Empty
 $("#hapus1").click(function(){
     $("#kotak3").empty(); //empty --> hanya menghapus isi dari div
+})
+
+//Remove li tertentu
+$("#hapus1").click(function(){
+    $("#kotak3 li").remove(".a, .b"); //empty --> hanya menghapus li yang memiliki class a dan b
 })
