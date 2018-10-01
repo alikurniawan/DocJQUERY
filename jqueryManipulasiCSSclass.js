@@ -38,7 +38,7 @@ $(document).ready(function(){
 
     //Toggle Class
     $("#kelas1").click(function(){
-        $("h3").toggleClass("header1"); //--> //ON OFF class --> kalau sudah ada maka tidka diisikan jika belum maka diisikan class
+        $("h3").toggleClass("header1"); //--> //ON OFF class --> kalau sudah ada maka tidak diisikan jika belum maka diisikan class
     })
 
 
