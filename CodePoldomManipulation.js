@@ -41,4 +41,9 @@ $(document).ready(function(){
      $('.vacation').html('<bold>Bogor</bold>'); // merubah text p bogor menjadi tebal atau bold
      $('.vacation').val(150); // merubah val 90 panda element <input val="90" /> menjadi 150
 
+     //  .remove()  .empty()
+     $(".vacation").remove() // membuang atau delete element HTML class vacation
+     $(".vacation").empty() // menghide element text HTML pada class vacation
+
+
 })
