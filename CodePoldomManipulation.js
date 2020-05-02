@@ -29,6 +29,16 @@ $(document).ready(function(){
 
      //Alternatif --> memanipulasi dom dengan memilih variable nya terlebih dahulu
      //  .insertBefore()  .insertAfter()  .prependTo()  .appendTo()
-     price.appendTo($('.vacation'));
+     price.appendTo($('.vacation'));  // var price ="<p>Harga</p>" tolong tambahkan class="vacation"
+
+     // GET function
+     //  .text()  .html()  .val()  // function untuk mengambil value, hanya bisa terlihat di console log
+     $('.vacation').text(); // hanya mengambil text surga yang berada didalam p --> <p>surga</p>
+     $('.vacation').html(); // full mengambil elemen html
+     $('.vacation').val(); // digunakan untuk mengambil angka 0,1,2 dst
+
+     $('.vacation').text("bogor"); // akan merunah text surga menjadi bogor p --> <p>bogor</p>
+     $('.vacation').html('<bold>Bogor</bold>'); // merubah text p bogor menjadi tebal atau bold
+     $('.vacation').val(150); // merubah val 90 panda element <input val="90" /> menjadi 150
 
 })
